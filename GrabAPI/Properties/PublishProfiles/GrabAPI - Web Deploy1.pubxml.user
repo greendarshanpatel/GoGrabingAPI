@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdS10j7mneE+LeY5od4CFiQAAAAACAAAAAAAQZgAAAAEAACAAAABIwxgEYPjQ1Uo/U1vN3IztLyhQOOlf81uBVYuRXYFufwAAAAAOgAAAAAIAACAAAAB2t25gPL6saboP8mvxhZ8OQDmSYbFQWkiJSvJvEA0LsYAAAACAmo2//W7nPvZMmkB1M0YIllw3uGMo5O9uoavwrercJW3J2yqj4TSH+OHTtDEyszsu7qkEAsHkfcAZVEpVwbre9Mdgj7oDqRvxQQ+mCde5s5oCIQmX8j51gXCDzZzQXz08tdbJ6ba8SsCetaf7+KHyivgVnZWcAn2Fx/vw+QD1BUAAAAAemvHmzaw84ohplZdGoGkRjhXR4ekPUG+i5wng0c4SGhh78gKsKSB8YUFkpeGUy7KUAEgI13/5Mj/MwmOOX0ps</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:gograbingwebapidbserver.database.windows.net,1433%3bInitial Catalog=GrabAPI_db%3bUser Id=adminuser%40gograbingwebapidbserver%3bPassword=Admin%40123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="GrabAPI.Models.AppDbContext">
+      <Value>Data Source=tcp:gograbingwebapidbserver.database.windows.net,1433%3bInitial Catalog=GrabAPI_db%3bUser Id=adminuser%40gograbingwebapidbserver%3bPassword=Admin%40123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
